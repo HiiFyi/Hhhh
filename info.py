@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '16688222'))
 API_HASH = environ.get('API_HASH', 'e97fbc548d9fbdbb45c3e51eaed15cc2')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7500331065:AAFqCZ5UT2rxPrVBw4crc0P-B5r0G5Hz10o")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7597869356:AAGifuBkwO5XFuklzDk4bI3exPnupOTUBm0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -30,9 +30,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002286266637'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002263940357'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7348205141').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002390903950 -1002148375787 -1002416164217').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002492003227').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1798604396').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
